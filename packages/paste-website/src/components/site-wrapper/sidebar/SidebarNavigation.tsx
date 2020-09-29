@@ -123,6 +123,8 @@ const SidebarNavigation: React.FC<SidebarNavigationProps> = () => {
 
   const [tokensOpen, setTokensOpen] = React.useState(getCurrentPathname().startsWith(SidebarCategoryRoutes.TOKENS));
 
+  const [patternsOpen, setPatternsOpen] = React.useState(getCurrentPathname().startsWith(SidebarCategoryRoutes.PATTERNS));
+
   return (
     <SiteNav role="navigation" aria-label="Main">
       <SiteNavList>
@@ -177,6 +179,21 @@ const SidebarNavigation: React.FC<SidebarNavigationProps> = () => {
             </SiteNavItem>
             <SiteNavItem>
               <SiteNavAnchor to={`${SidebarCategoryRoutes.TOKENS}/theme-package`}>Theme package</SiteNavAnchor>
+            </SiteNavItem>
+          </SiteNavNestList>
+        </SiteNavItem>
+        <SiteNavItem>
+          <SiteNavButton
+            onClick={() => setPatternsOpen(!patternsOpen)}
+            isOpen={patternsOpen}
+            aria-expanded={patternsOpen}
+          >
+            Patterns
+            <SiteNavAnchorArrow isOpen={patternsOpen} />
+          </SiteNavButton>
+          <SiteNavNestList isOpen={patternsOpen}>
+            <SiteNavItem>
+              <SiteNavAnchor to="/patterns/notifications">notifications</SiteNavAnchor>
             </SiteNavItem>
           </SiteNavNestList>
         </SiteNavItem>
