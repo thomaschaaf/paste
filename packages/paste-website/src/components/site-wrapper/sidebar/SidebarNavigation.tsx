@@ -123,7 +123,9 @@ const SidebarNavigation: React.FC<SidebarNavigationProps> = () => {
 
   const [tokensOpen, setTokensOpen] = React.useState(getCurrentPathname().startsWith(SidebarCategoryRoutes.TOKENS));
 
-  const [patternsOpen, setPatternsOpen] = React.useState(getCurrentPathname().startsWith(SidebarCategoryRoutes.PATTERNS));
+  const [patternsOpen, setPatternsOpen] = React.useState(
+    getCurrentPathname().startsWith(SidebarCategoryRoutes.PATTERNS)
+  );
 
   return (
     <SiteNav role="navigation" aria-label="Main">
