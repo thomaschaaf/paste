@@ -201,7 +201,7 @@ const SidebarNavigation: React.FC<SidebarNavigationProps> = () => {
               <SiteNavAnchor to="/patterns/delete">Delete</SiteNavAnchor>
             </SiteNavItem>
             <SiteNavItem>
-              <SiteNavAnchor to="/patterns/notifications">Notifications</SiteNavAnchor>
+              <SiteNavAnchor to="/patterns/notifications">Notifications and feedback</SiteNavAnchor>
             </SiteNavItem>
           </SiteNavNestList>
         </SiteNavItem>
