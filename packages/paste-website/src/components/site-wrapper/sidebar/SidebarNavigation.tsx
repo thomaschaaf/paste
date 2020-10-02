@@ -198,10 +198,16 @@ const SidebarNavigation: React.FC<SidebarNavigationProps> = () => {
           </SiteNavButton>
           <SiteNavNestList isOpen={patternsOpen}>
             <SiteNavItem>
+              <SiteNavAnchor  to={`${SidebarCategoryRoutes.PATTERNS}`}>Overview</SiteNavAnchor>
+            </SiteNavItem>
+            <SiteNavItem>
               <SiteNavAnchor to="/patterns/delete">Delete</SiteNavAnchor>
             </SiteNavItem>
             <SiteNavItem>
               <SiteNavAnchor to="/patterns/notifications">Notifications and feedback</SiteNavAnchor>
+            </SiteNavItem>
+            <SiteNavItem>
+              <SiteNavAnchor to="/patterns/object-details">Object details</SiteNavAnchor>
             </SiteNavItem>
           </SiteNavNestList>
         </SiteNavItem>
