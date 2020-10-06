@@ -201,6 +201,12 @@ const SidebarNavigation: React.FC<SidebarNavigationProps> = () => {
               <SiteNavAnchor to={`${SidebarCategoryRoutes.PATTERNS}`}>Overview</SiteNavAnchor>
             </SiteNavItem>
             <SiteNavItem>
+              <SiteNavAnchor to="/patterns/contribute">How to contribute</SiteNavAnchor>
+            </SiteNavItem>
+            <SiteNavItem>
+              <SiteNavAnchor to="/patterns/create">Create</SiteNavAnchor>
+            </SiteNavItem>
+            <SiteNavItem>
               <SiteNavAnchor to="/patterns/delete">Delete</SiteNavAnchor>
             </SiteNavItem>
             <SiteNavItem>
@@ -208,6 +214,18 @@ const SidebarNavigation: React.FC<SidebarNavigationProps> = () => {
             </SiteNavItem>
             <SiteNavItem>
               <SiteNavAnchor to="/patterns/object-details">Object details</SiteNavAnchor>
+            </SiteNavItem>
+            <SiteNavItem>
+              <SiteNavAnchor to="/patterns/empty-state">Empty state</SiteNavAnchor>
+            </SiteNavItem>
+            <SiteNavItem>
+              <SiteNavAnchor to="/patterns/filter">Filter</SiteNavAnchor>
+            </SiteNavItem>
+            <SiteNavItem>
+              <SiteNavAnchor to="/patterns/status">Status indicators</SiteNavAnchor>
+            </SiteNavItem>
+            <SiteNavItem>
+              <SiteNavAnchor to="/patterns/stat-cards">Stat cards</SiteNavAnchor>
             </SiteNavItem>
           </SiteNavNestList>
         </SiteNavItem>
