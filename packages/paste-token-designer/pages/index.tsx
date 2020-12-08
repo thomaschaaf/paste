@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Home() {
+const IndexPage: React.FC = () => {
   return (
     <div>
       <Link href="/edit">
@@ -11,4 +11,6 @@ export default function Home() {
       </Link>
     </div>
   );
-}
+};
+
+export default IndexPage;
