@@ -19,9 +19,33 @@ export const globalTypes = {
   },
 };
 
+function sendToFunction(metric, id) {
+  const body = JSON.stringify({[metric.name]: metric.value, id});
+  fetch('https://web-vitals-4499.twil.io/report', {
+    body,
+    method: 'POST',
+    keepalive: true,
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+}
+
+const reportWebVitals = (id) => {
+  import('web-vitals').then(({getCLS, getFID, getFCP, getLCP, getTTFB}) => {
+    getCLS((metric) => sendToFunction(metric, id), true);
+    getFID((metric) => sendToFunction(metric, id));
+    getFCP((metric) => sendToFunction(metric, id));
+    getLCP((metric) => sendToFunction(metric, id), true);
+    getTTFB((metric) => sendToFunction(metric, id));
+  });
+};
+
 export const decorators = [
   (Story, context) => {
     const theme = context.globals.theme;
+    reportWebVitals(context.id);
     return (
       <Theme.Provider theme={theme}>
         <Box padding="space40">
