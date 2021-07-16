@@ -12,7 +12,7 @@ packages/paste-website/public
 packages/paste-theme-designer/public/
 .cache
 .next
-.yarn
+pnpm-lock.yaml
 
 tsconfig.build.tsbuildinfo
 **/*.d.ts

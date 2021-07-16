@@ -5,7 +5,7 @@ const PACKAGES_CACHE_PATH = path.join(__dirname, '../tools/.cache/packages.json'
 
 if (!fs.existsSync(PACKAGES_CACHE_PATH)) {
   throw new Error(
-    `[Jest resolver]: The "/tools/.cache/packages.json" file does not exist.  Please run "yarn pre-test"`
+    `[Jest resolver]: The "/tools/.cache/packages.json" file does not exist.  Please run "pnpm pre-test"`
   );
 }
 

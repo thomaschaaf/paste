@@ -12,7 +12,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "clean": "rm -rf public && rm -rf .cache",
     "tsc": "tsc --noEmit",
-    "tsc:watch": "yarn type-check -- --watch",
+    "tsc:watch": "pnpm type-check -- --watch",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {

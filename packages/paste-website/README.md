@@ -3,7 +3,7 @@
 To run just run
 
 ```
-yarn start
+pnpm start
 ```
 
 At the root of the Paste monorepo.
