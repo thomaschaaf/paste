@@ -45,6 +45,8 @@ module.exports = {
     config.resolve.plugins =
       config.resolve.plugins == null ? customPlugins : [...config.resolve.plugins, ...customPlugins];
 
+    config.resolve.symlinks = true;
+
     return config;
   },
 };

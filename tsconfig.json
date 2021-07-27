@@ -26,7 +26,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strict": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "preserveSymlinks": true
   },
   "include": ["packages/**/*", "dangerfile.ts", ".danger/**/*"],
   "exclude": [
