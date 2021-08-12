@@ -18,10 +18,15 @@ interface GetStartedRunningProps {
 
 export const GetStartedRunning: React.FC<GetStartedRunningProps> = ({animationDelay}) => {
   const {ref, width: linkBoxWidth = 1} = useResizeObserver<HTMLDivElement>();
+
+  const isVertical = React.useMemo(() => {
+    return linkBoxWidth < 270;
+  }, [linkBoxWidth]);
+
   const {theme} = useDarkModeContext();
   return (
     <GetStartedCard animationDelay={animationDelay}>
-      <Box display="flex" height="100%" flexDirection="column" justifyContent="space-between">
+      <Box display="flex" height="100%" flexDirection="column" justifyContent="space-between" ref={ref}>
         <div>
           <GetStartedCardIllustration>
             {theme === 'default' ? (
@@ -35,7 +40,7 @@ export const GetStartedRunning: React.FC<GetStartedRunningProps> = ({animationDe
           </Heading>
           <Paragraph>We have step-by-step guides to get you set up with Paste efficiently.</Paragraph>
         </div>
-        <GetStartedCardLinks ref={ref} vertical={linkBoxWidth < 220}>
+        <GetStartedCardLinks vertical={isVertical}>
           <GetStartedCardLink
             to="/getting-started/engineering"
             onClick={() =>
@@ -65,3 +70,5 @@ export const GetStartedRunning: React.FC<GetStartedRunningProps> = ({animationDe
     </GetStartedCard>
   );
 };
+
+GetStartedRunning.displayName = 'GetStartedRunning';

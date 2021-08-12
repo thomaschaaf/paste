@@ -29,18 +29,19 @@ export const GetStarted: React.FC = () => {
           paddingTop="space200"
           marginTop="spaceNegative160"
         >
-          <Grid as="section" gutter="space40" vertical={[true, false, false]} equalColumnHeights>
+          <Grid
+            as="section"
+            gutter={['space70', 'space40', 'space40']}
+            vertical={[true, false, false]}
+            equalColumnHeights
+          >
             <Column span={4}>
-              <Box marginBottom={['space70', 'space0', 'space0']}>
-                <GetStarterWhy />
-              </Box>
+              <GetStarterWhy />
             </Column>
             <Column span={4}>
-              <Box marginBottom={['space70', 'space0', 'space0']}>
-                <GetStartedInclusive
-                  animationDelay={breakpointIndex === undefined || breakpointIndex > 1 ? DELAY_INTERVAL : 0}
-                />
-              </Box>
+              <GetStartedInclusive
+                animationDelay={breakpointIndex === undefined || breakpointIndex > 1 ? DELAY_INTERVAL : 0}
+              />
             </Column>
             <Column span={4}>
               <GetStartedRunning

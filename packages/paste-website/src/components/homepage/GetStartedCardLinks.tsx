@@ -21,3 +21,5 @@ export const GetStartedCardLinks = React.forwardRef<HTMLDivElement, GetStartedCa
     );
   }
 );
+
+GetStartedCardLinks.displayName = 'GetStartedCardLinks';

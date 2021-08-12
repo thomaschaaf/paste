@@ -13,3 +13,5 @@ export const GetStartedCardLink: React.FC<GetStartedCardLinkProps> = ({children,
     </Text>
   );
 };
+
+GetStartedCardLink.displayName = 'GetStartedCardLink';
