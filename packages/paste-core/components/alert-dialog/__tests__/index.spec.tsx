@@ -56,9 +56,13 @@ describe('Alert Dialog', () => {
   });
 });
 
-describe('Alert Dialog `element` prop', () => {
-  it('should set the default element prop on Alert Dialog', () => {
-    const {container} = render(<CustomizedAlertDialog />);
+describe.only('Alert Dialog `element` prop', () => {
+  it.only('should set the default element prop on Alert Dialog', () => {
+    const {container} = render(<CustomizedAlertDialog />, {
+      wrapper: ({children}) => <div id="test-container-wrapper">{children}</div>,
+    });
+
+    console.log(screen.debug());
     expect(screen.getByTestId('alert_dialog').getAttribute('data-paste-element')).toEqual('ALERT_DIALOG');
     // expect(container.querySelector('[data-paste-element="ALERT_DIALOG_HEADER_WRAPPER"]')).toBeInTheDocument();
     expect(screen.getByText('Alert Dialog').getAttribute('data-paste-element')).toEqual('ALERT_DIALOG_HEADER');
