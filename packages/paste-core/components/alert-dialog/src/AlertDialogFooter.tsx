@@ -1,11 +1,12 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import {Box, safelySpreadBoxProps} from '@twilio-paste/box';
+import type {BoxProps} from '@twilio-paste/box';
 import {Button} from '@twilio-paste/button';
 import {Stack} from '@twilio-paste/stack';
 import {modalFooterStyles} from '@twilio-paste/modal';
 
-export interface AlertDialogFooterProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface AlertDialogFooterProps extends React.HTMLAttributes<HTMLDivElement>, Pick<BoxProps, 'element'> {
   destructive?: boolean;
   onConfirm: () => void;
   onConfirmLabel: string;
@@ -14,7 +15,7 @@ export interface AlertDialogFooterProps extends React.HTMLAttributes<HTMLDivElem
 }
 
 export const AlertDialogFooter = React.forwardRef<HTMLDivElement, AlertDialogFooterProps>(
-  ({destructive, onConfirm, onConfirmLabel, onDismiss, onDismissLabel, ...props}, ref) => {
+  ({destructive, element = 'ALERT_DIALOG', onConfirm, onConfirmLabel, onDismiss, onDismissLabel, ...props}, ref) => {
     const primaryVariant = destructive ? 'destructive' : 'primary';
 
     return (
@@ -23,6 +24,7 @@ export const AlertDialogFooter = React.forwardRef<HTMLDivElement, AlertDialogFoo
         as="footer"
         {...modalFooterStyles}
         border="none"
+        element={`${element}_FOOTER`}
         justifyContent="flex-end"
         paddingTop="space0"
         ref={ref}
@@ -44,6 +46,7 @@ AlertDialogFooter.displayName = 'AlertDialogFooter';
 
 AlertDialogFooter.propTypes = {
   destructive: PropTypes.bool,
+  element: PropTypes.string,
   onConfirm: PropTypes.func.isRequired,
   onConfirmLabel: PropTypes.string.isRequired,
   onDismiss: PropTypes.func.isRequired,

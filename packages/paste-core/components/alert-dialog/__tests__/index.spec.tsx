@@ -3,7 +3,12 @@ import {matchers} from 'jest-emotion';
 import {render, screen} from '@testing-library/react';
 // @ts-ignore typescript doesn't like js imports
 import axe from '../../../../../.jest/axe-helper';
-import {AlertDialogWithTwoActions, DestructiveAlertDialog} from '../stories/index.stories';
+import {
+  AlertDialogWithTwoActions,
+  DestructiveAlertDialog,
+  CustomizedAlertDialog,
+  CustomizedDestructiveAlertDialog,
+} from '../stories/index.stories';
 
 expect.extend(matchers);
 
@@ -48,6 +53,58 @@ describe('Alert Dialog', () => {
   it('Should have the initial focus land on the first focusable item', () => {
     render(<AlertDialogWithTwoActions />);
     expect(document.activeElement).toEqual(screen.getAllByRole('button')[0]);
+  });
+});
+
+describe('Alert Dialog `element` prop', () => {
+  it('should set the default element prop on Alert Dialog', () => {
+    const {container} = render(<CustomizedAlertDialog />);
+    expect(screen.getByTestId('alert_dialog').getAttribute('data-paste-element')).toEqual('ALERT_DIALOG');
+    // expect(container.querySelector('[data-paste-element="ALERT_DIALOG_HEADER_WRAPPER"]')).toBeInTheDocument();
+    expect(screen.getByText('Alert Dialog').getAttribute('data-paste-element')).toEqual('ALERT_DIALOG_HEADER');
+    expect(
+      screen
+        .getByText('Are you sure you want to submit this application? No information can be changed after submitting.')
+        .getAttribute('data-paste-element')
+    ).toEqual('ALERT_DIALOG_BODY');
+    // expect(container.querySelector('[data-paste-element="ALERT_DIALOG_FOOTER"]')).toBeInTheDocument();
+  });
+  it('should set the custom element prop on Alert Dialog', () => {
+    const {container} = render(<CustomizedDestructiveAlertDialog />);
+    expect(screen.getByTestId('destructive_alert_dialog').getAttribute('data-paste-element')).toEqual('FOO');
+    // expect(container.querySelector('[data-paste-element="ALERT_DIALOG_HEADER_WRAPPER"]')).toBeInTheDocument();
+    expect(screen.getByText('Alert Dialog').getAttribute('data-paste-element')).toEqual('FOO_HEADER');
+    expect(
+      screen
+        .getByText('Are you sure you want to delete this data? This action cannot be undone.')
+        .getAttribute('data-paste-element')
+    ).toEqual('FOO_BODY');
+    // expect(container.querySelector('[data-paste-element="ALERT_DIALOG_FOOTER"]')).toBeInTheDocument();
+  });
+});
+
+describe('Alert Dialog customization', () => {
+  it('should apply styles to Alert Dialog', () => {
+    const {container} = render(<CustomizedAlertDialog />);
+    expect(screen.getByTestId('alert_dialog')).toHaveStyleRule('background-color', 'rgb(255,241,179)');
+    // expect(container.querySelector('[data-paste-element="ALERT_DIALOG_HEADER_WRAPPER"]')).toHaveStyleRule('border', 'inherit')
+    expect(screen.getByText('Alert Dialog')).toHaveStyleRule('background-color', 'rgb(235,244,255)');
+    expect(
+      screen.getByText(
+        'Are you sure you want to submit this application? No information can be changed after submitting.'
+      )
+    ).toHaveStyleRule('background-color', 'rgb(237,253,243)');
+    // expect(container.querySelector('[data-paste-element="ALERT_DIALOG_FOOTER"]')).toHaveStyleRule('paddingTop', '5rem')
+  });
+  it('should apply styles to Alert Dialog with custom element prop', () => {
+    const {container} = render(<CustomizedDestructiveAlertDialog />);
+    expect(screen.getByTestId('destructive_alert_dialog')).toHaveStyleRule('background-color', 'rgb(214,31,31)');
+    // expect(container.querySelector('[data-paste-element="ALERT_DIALOG_HEADER_WRAPPER"]')).toHaveStyleRule('border', 'inherit')
+    expect(screen.getByText('Alert Dialog')).toHaveStyleRule('background-color', 'rgb(235,244,255)');
+    expect(
+      screen.getByText('Are you sure you want to delete this data? This action cannot be undone.')
+    ).toHaveStyleRule('background-color', 'rgb(237,253,243)');
+    // expect(container.querySelector('[data-paste-element="ALERT_DIALOG_FOOTER"]')).toHaveStyleRule('paddingTop', '5rem')
   });
 });
 
