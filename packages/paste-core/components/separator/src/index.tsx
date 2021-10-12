@@ -14,6 +14,10 @@ export interface SeparatorProps extends React.HTMLAttributes<HTMLHRElement>, Pic
   verticalSpacing?: Space;
 }
 
+const meow_test_this = 'woof';
+
+console.log(meow_test_this);
+
 const Separator = React.forwardRef<HTMLHRElement, SeparatorProps>(
   ({element = 'SEPARATOR', orientation, horizontalSpacing, verticalSpacing, ...props}, ref) => {
     return (

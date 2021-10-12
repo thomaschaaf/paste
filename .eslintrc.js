@@ -1,5 +1,5 @@
 const path = require('path');
-const cachedPackages = require('./tools/.cache/packages.json');
+// const cachedPackages = require('./tools/.cache/packages.json');
 
 // Based on https://github.com/iamturns/create-exposed-app/blob/master/.eslintrc.js
 module.exports = {
@@ -82,7 +82,7 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        packageDir: [path.join(__dirname, './'), ...cachedPackages.map((package) => package.location)],
+        packageDir: [path.join(__dirname, './'), ...[].map((package) => package.location)],
       },
     ],
     'react/jsx-curly-brace-presence': 0,
@@ -103,15 +103,5 @@ module.exports = {
     ],
     // We don't use jasmine and this clashes with danger js
     'jest/no-jasmine-globals': 'off',
-  },
-  settings: {
-    'import/resolver': {
-      [path.join(__dirname, './.eslint/resolver')]: {
-        someConfig: '',
-      },
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx', '.d.ts'],
-      },
-    },
   },
 };

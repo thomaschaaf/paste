@@ -21,6 +21,7 @@
     "build": "yarn clean && NODE_ENV=production node build.js && tsc",
     "build:js": "NODE_ENV=development node build.js",
     "build:props": "typedoc --tsconfig ./tsconfig.json --json ./dist/prop-types.json",
+    "lint": "node ../../../../node_modules/.bin/eslint --config .eslintrc.js --ext .tsx,.ts",
     "clean": "rm -rf ./dist",
     "tsc": "tsc"
   },
