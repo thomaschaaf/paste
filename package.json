@@ -61,8 +61,7 @@
     "packages:fix": "manypkg fix",
     "changeset": "changeset",
     "create:package": "plop create-package",
-    "token-usage": "ts-node tools/build/token-usage-detector.ts",
-    "lint:single": "yarn workspace @twilio-paste/separator lint:base"
+    "token-usage": "ts-node tools/build/token-usage-detector.ts"
   },
   "dependencies": {
     "@babel/cli": "^7.10.5",

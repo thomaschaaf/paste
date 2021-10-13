@@ -1,7 +1,7 @@
-const mainConfig = require('../../../../.eslintrc.js');
+const mainConfig = require('../../../../.eslintrc.base.js');
 
 module.exports = {
-  ...mainConfig,
+  ...mainConfig(tsConfigPath),
   root: true,
   parserOptions: {
     project: ['./tsconfig.eslint.json'],

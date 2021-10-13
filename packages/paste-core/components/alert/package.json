@@ -22,7 +22,9 @@
     "build:js": "NODE_ENV=development node build.js",
     "build:props": "typedoc --tsconfig ./tsconfig.json --json ./dist/prop-types.json",
     "lint:base": "yarn node ../../../../node_modules/.bin/eslint",
-    "lint": "yarn lint:base . --ext .ts --ext .tsx",
+    "lint:typescript": "yarn lint:base . --ext .ts --ext .tsx",
+    "lint:jest": "yarn lint:base . --ext .spec.ts --ext .spec.tsx",
+    "lint": "yarn lint:base .",
     "clean": "rm -rf ./dist",
     "tsc": "tsc"
   },

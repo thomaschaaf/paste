@@ -1,11 +1,10 @@
 const path = require('path');
 const cachedPackages = require('./tools/.cache/packages.json');
 
-const tsconfigPath = path.resolve(__dirname, './tsconfig.eslint.json');
+const ROOT_PATH = path.resolve(__dirname, './tsconfig.eslint.json');
 
-console.log({tsconfigPath});
 // Based on https://github.com/iamturns/create-exposed-app/blob/master/.eslintrc.js
-module.exports = {
+module.exports = (tsconfigPath = ROOT_PATH) => ({
   parser: '@typescript-eslint/parser',
   overrides: [
     {
@@ -138,4 +137,4 @@ module.exports = {
     // We don't use jasmine and this clashes with danger js
     'jest/no-jasmine-globals': 'off',
   },
-};
+});
