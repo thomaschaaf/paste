@@ -3,5 +3,6 @@
   "compilerOptions": {
     "outDir": "dist/"
   },
-  "include": ["src/**/*", "stories/**/*", "__tests__/**/*.spec.ts", "__tests__/**/*.spec.tsx"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

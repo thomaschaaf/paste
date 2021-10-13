@@ -20,7 +20,7 @@ packages/paste-core/core-bundle
 packages/**/dist/*
 
 .eslintrc.js
-**/.eslintrc.js
+**/**/.eslintrc.js
 
 tsconfig.build.tsbuildinfo
 **/*.d.ts

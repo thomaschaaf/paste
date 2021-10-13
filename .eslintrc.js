@@ -1,11 +1,11 @@
 const path = require('path');
-// const cachedPackages = require('./tools/.cache/packages.json');
+const cachedPackages = require('./tools/.cache/packages.json');
 
 // Based on https://github.com/iamturns/create-exposed-app/blob/master/.eslintrc.js
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: './tsconfig.json',
+    project: './tsconfig.eslint.json',
   },
   plugins: ['@typescript-eslint', 'eslint-comments', 'jest', 'promise', 'unicorn', 'emotion'],
   extends: [
@@ -25,6 +25,17 @@ module.exports = {
     browser: true,
     jest: true,
   },
+  ignorePatterns: [
+    '.eslintrc.js',
+    // '/**/*.md',
+    '**/*.d.ts',
+    // '/**/**/build.js',
+    // '/**/dist/**',
+    // '/**/**/package.json',
+    '/**/**/.eslintrc.js',
+    // '/**/**/tsconfig.json',
+    // '/**/**/tsconfig.eslint.json',
+  ],
   rules: {
     // Too restrictive, writing ugly code to defend against a very unlikely scenario: https://eslint.org/docs/rules/no-prototype-builtins
     'no-prototype-builtins': 'off',
@@ -82,7 +93,7 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        packageDir: [path.join(__dirname, './'), ...[].map((package) => package.location)],
+        packageDir: [path.join(__dirname, './'), ...cachedPackages.map((package) => package.location)],
       },
     ],
     'react/jsx-curly-brace-presence': 0,
