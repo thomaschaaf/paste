@@ -1,30 +1,34 @@
 describe('Sidebar navigation', () => {
-  it('opens the sidebar disclosures', () => {
+  beforeEach(() => {
+    cy.intercept('/page-data/app-data.json').as('appData');
+    cy.intercept('/page-data/illustrations/page-data.json').as('pageData');
     cy.visit('/');
-    cy.wait(2500);
+    cy.wait(['@appData', '@pageData']);
+  });
 
-    cy.get('[data-cy=getting-started-button]').click({force: true}).should('have.attr', 'aria-expanded', 'true');
-    cy.get('[data-cy=getting-started-list]').should('be.visible');
+  it('opens the sidebar disclosures', () => {
+    cy.get('[data-cy=getting-started-button]').click().shouldHaveAttribute('aria-expanded', 'true');
+    cy.getInFixedContainer('[data-cy=getting-started-list]').shouldBeVisible();
 
-    cy.get('[data-cy=design-tokens-button]').click({force: true}).should('have.attr', 'aria-expanded', 'true');
-    cy.get('[data-cy=design-tokens-list]').should('be.visible');
+    cy.get('[data-cy=design-tokens-button]').click().shouldHaveAttribute('aria-expanded', 'true');
+    cy.getInFixedContainer('[data-cy=design-tokens-list]').shouldBeVisible();
 
-    cy.get('[data-cy=components-button]').click({force: true}).should('have.attr', 'aria-expanded', 'true');
-    cy.get('[data-cy=components-list]').should('be.visible');
+    cy.get('[data-cy=components-button]').click().shouldHaveAttribute('aria-expanded', 'true');
+    cy.getInFixedContainer('[data-cy="components-list"]').shouldBeVisible();
 
-    cy.get('[data-cy=primitives-button]').click({force: true}).should('have.attr', 'aria-expanded', 'true');
-    cy.get('[data-cy=primitives-list]').should('be.visible');
+    cy.get('[data-cy=primitives-button]').click().shouldHaveAttribute('aria-expanded', 'true');
+    cy.getInFixedContainer('[data-cy=primitives-list]').shouldBeVisible();
 
-    cy.get('[data-cy=layout-button]').click({force: true}).should('have.attr', 'aria-expanded', 'true');
-    cy.get('[data-cy=layout-list]').should('be.visible');
+    cy.get('[data-cy=layout-button]').click().shouldHaveAttribute('aria-expanded', 'true');
+    cy.getInFixedContainer('[data-cy=layout-list]').shouldBeVisible();
 
-    cy.get('[data-cy=icons-button]').click({force: true}).should('have.attr', 'aria-expanded', 'true');
-    cy.get('[data-cy=icons-list]').should('be.visible');
+    cy.get('[data-cy=icons-button]').click().shouldHaveAttribute('aria-expanded', 'true');
+    cy.getInFixedContainer('[data-cy=icons-list]').shouldBeVisible();
 
-    cy.get('[data-cy=content-button]').click({force: true}).should('have.attr', 'aria-expanded', 'true');
-    cy.get('[data-cy=content-list]').should('be.visible');
+    cy.get('[data-cy=content-button]').click().shouldHaveAttribute('aria-expanded', 'true');
+    cy.getInFixedContainer('[data-cy=content-list]').shouldBeVisible();
 
-    cy.get('[data-cy=patterns-button]').click({force: true}).should('have.attr', 'aria-expanded', 'true');
-    cy.get('[data-cy=patterns-list]').should('be.visible');
+    cy.get('[data-cy=patterns-button]').click().shouldHaveAttribute('aria-expanded', 'true');
+    cy.getInFixedContainer('[data-cy=patterns-list]').shouldBeVisible();
   });
 });

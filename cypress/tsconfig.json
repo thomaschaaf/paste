@@ -1,11 +1,10 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "target": "es5",
     "lib": ["es2017", "DOM"],
     "types": ["cypress", "@applitools/eyes-cypress"]
   },
-  "include": [
-    "**/*.ts"
-  ],
-  "files": ["../node_modules/@applitools/eyes-cypress/eyes-index.d.ts"],
+  "include": ["**/*.ts"],
+  "files": ["../node_modules/@applitools/eyes-cypress/eyes-index.d.ts"]
 }
