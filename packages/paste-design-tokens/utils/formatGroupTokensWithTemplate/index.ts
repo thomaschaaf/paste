@@ -59,7 +59,7 @@ export const formatGroupTokensWithTemplate = (
           }
         })
         .filter((prop) => prop !== undefined && cat === prop.get('category'))
-        .toJS();
+        .toJS() as DesignToken[];
 
       if (typeof cat === 'string') {
         return categoryTemplate(getPluralCatName(cat), catProps);

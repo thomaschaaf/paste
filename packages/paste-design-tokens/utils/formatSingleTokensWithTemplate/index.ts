@@ -14,7 +14,7 @@ export const formatSingleTokensWithTemplate = (
     })
     .map((prop): string | null => {
       if (prop !== undefined) {
-        return tokenTemplate(prop.toJS());
+        return tokenTemplate((prop.toJS() as unknown) as DesignToken);
       }
       return null;
     })

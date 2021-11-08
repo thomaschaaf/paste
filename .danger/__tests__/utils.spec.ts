@@ -112,7 +112,7 @@ describe('danger utils', () => {
             'package.json',
             'packages/box/package.json',
             'packages/paste-core/components/alert-dialog/stories/index.stories.tsx',
-            'yarn.lock',
+            'pnpm-lock.yaml',
             '.changeset/pretty-cameras-burn.md',
           ],
           ['packages/box', 'packages/paste-core/components/alert-dialog']
@@ -121,7 +121,7 @@ describe('danger utils', () => {
 
       expect(
         getPublicPackageFilesFromFiles(
-          ['package.json', 'yarn.lock', '.changeset/pretty-cameras-burn.md'],
+          ['package.json', 'pnpm-lock.yaml', '.changeset/pretty-cameras-burn.md'],
           ['packages/box', 'packages/paste-core/components/alert-dialog']
         )
       ).toEqual([]);
@@ -157,7 +157,7 @@ describe('danger utils', () => {
             'package.json',
             'packages/box/package.json',
             'packages/paste-core/components/alert-dialog/stories/index.stories.tsx',
-            'yarn.lock',
+            'pnpm-lock.yaml',
             '.changeset/pretty-cameras-burn.md',
           ],
           [
@@ -185,7 +185,7 @@ describe('danger utils', () => {
             'package.json',
             'packages/paste-style-props/src/index.ts',
             'packages/paste-core/components/alert-dialog/stories/index.stories.tsx',
-            'yarn.lock',
+            'pnpm-lock.yaml',
             '.changeset/pretty-cameras-burn.md',
           ],
           [
@@ -212,7 +212,7 @@ describe('danger utils', () => {
             'packages/paste-style-props/src/index.ts',
             'packages/paste-core/components/alert-dialog/stories/index.stories.tsx',
             'packages/paste-core/components/alert-dialog/src/index.tsx',
-            'yarn.lock',
+            'pnpm-lock.yaml',
             '.changeset/pretty-cameras-burn.md',
           ],
           [
@@ -241,7 +241,7 @@ describe('danger utils', () => {
           'package.json',
           'packages/box/package.json',
           'packages/paste-core/components/alert-dialog/stories/index.stories.tsx',
-          'yarn.lock',
+          'pnpm-lock.yaml',
           '.changeset/pretty-cameras-burn.md',
         ])
       ).toEqual(['.changeset/pretty-cameras-burn.md']);
@@ -253,7 +253,7 @@ describe('danger utils', () => {
           'package.json',
           'packages/box/package.json',
           'packages/paste-core/components/alert-dialog/stories/index.stories.tsx',
-          'yarn.lock',
+          'pnpm-lock.yaml',
           '.changeset/pretty-cameras-burn.md',
           '.changeset/pretty-silly-sheep.md',
         ])
@@ -267,7 +267,7 @@ describe('danger utils', () => {
         getPackJsonsFromFiles([
           'package.json',
           'packages/paste-core/components/alert-dialog/stories/index.stories.tsx',
-          'yarn.lock',
+          'pnpm-lock.yaml',
           '.changeset/pretty-cameras-burn.md',
         ])
       ).toEqual(['package.json']);
@@ -279,7 +279,7 @@ describe('danger utils', () => {
           'package.json',
           'packages/box/package.json',
           'packages/paste-core/components/alert-dialog/stories/index.stories.tsx',
-          'yarn.lock',
+          'pnpm-lock.yaml',
           '.changeset/pretty-cameras-burn.md',
         ])
       ).toEqual(['package.json', 'packages/box/package.json']);

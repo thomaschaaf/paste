@@ -4,13 +4,13 @@
   "description": "Shared typescript typings for Paste",
   "author": "Twilio Inc.",
   "license": "MIT",
-  "main:dev": "src/index.ts",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.ts",
   "sideEffects": false,
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "main": "dist/index.js",
+    "module": "dist/index.es.js",
+    "types": "dist/index.d.ts"
   },
   "files": [
     "dist"
@@ -19,7 +19,7 @@
     "build": "pnpm clean && NODE_ENV=production node build.js && tsc",
     "build:js": "NODE_ENV=development node build.js",
     "build:props": "typedoc --tsconfig ./tsconfig.json --json ./dist/prop-types.json",
-    "clean": "rm -rf ./dist",
+    "clean": "rm -rf ./dist && rm -rf node_modules",
     "tsc": "tsc"
   },
   "dependencies": {
@@ -34,6 +34,6 @@
     "react": "^16.8.6 || ^17.0.2"
   },
   "devDependencies": {
-    "react": "^17.0.2"
+    "react": "^16.8.6 || ^17.0.2"
   }
 }

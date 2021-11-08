@@ -2,12 +2,12 @@ const shell = require('shelljs');
 const {resolve} = require('path');
 const chalk = require('chalk');
 
-async function removeYarnLockfile() {
+async function removeLockfile() {
   // eslint-disable-next-line no-console
-  console.log(chalk.red('[Monorepo] Removing yarn.lock file.'));
-  shell.rm(resolve(__dirname, '../../yarn.lock'));
+  console.log(chalk.red('[Monorepo] Removing pnpm-lock.yaml file.'));
+  shell.rm(resolve(__dirname, '../../pnpm-lock.yaml'));
 }
 
 module.exports = {
-  removeYarnLockfile,
+  removeLockfile,
 };

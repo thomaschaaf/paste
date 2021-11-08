@@ -4,13 +4,13 @@
   "description": "Shared utilities for style properties used in Paste",
   "author": "Twilio Inc.",
   "license": "MIT",
-  "main:dev": "src/index.ts",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.ts",
   "sideEffects": false,
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "main": "dist/index.js",
+    "module": "dist/index.es.js",
+    "types": "dist/index.d.ts"
   },
   "files": [
     "dist"
@@ -19,7 +19,7 @@
     "build": "pnpm clean && NODE_ENV=production node build.js && tsc",
     "build:js": "NODE_ENV=development node build.js",
     "build:props": "typedoc --tsconfig ./tsconfig.json --json ./dist/prop-types.json",
-    "clean": "rm -rf ./dist",
+    "clean": "rm -rf ./dist && rm -rf node_modules",
     "tsc": "tsc"
   },
   "dependencies": {
@@ -27,15 +27,15 @@
     "lodash.camelcase": "^4.3.0"
   },
   "peerDependencies": {
-    "@twilio-paste/design-tokens": "^6.6.0",
-    "@twilio-paste/styling-library": "^0.3.1",
-    "@twilio-paste/theme": "^5.0.1",
+    "@twilio-paste/design-tokens": "workspace:*",
+    "@twilio-paste/styling-library": "workspace:*",
+    "@twilio-paste/theme": "workspace:*",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@twilio-paste/design-tokens": "^6.7.0",
-    "@twilio-paste/styling-library": "^0.3.2",
-    "@twilio-paste/theme": "^5.1.0",
+    "@twilio-paste/design-tokens": "workspace:*",
+    "@twilio-paste/styling-library": "workspace:*",
+    "@twilio-paste/theme": "workspace:*",
     "prop-types": "^15.7.2"
   }
 }

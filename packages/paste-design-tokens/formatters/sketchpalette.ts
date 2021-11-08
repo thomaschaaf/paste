@@ -1,6 +1,6 @@
 import * as color from 'color';
 import * as Immutable from 'immutable';
-import {ImmutableStyleMap} from 'theo';
+import type {ImmutableStyleMap} from 'theo';
 
 interface SketchPaletteColor {
   name: string;
@@ -29,7 +29,7 @@ const convertToSketchPaletteColor = (input: string): {[key: string]: number} => 
 };
 
 const convertColorArray = (result: ImmutableStyleMap): SketchPaletteColor[] =>
-  result
+  (result
     .get('props')
     .sortBy((prop) => {
       if (prop !== undefined) {
@@ -45,7 +45,7 @@ const convertColorArray = (result: ImmutableStyleMap): SketchPaletteColor[] =>
       }
       return Immutable.Map({name}).merge(convertToSketchPaletteColor(value));
     })
-    .toJS();
+    .toJS() as unknown) as SketchPaletteColor[];
 
 export const sketchpaletteTokenFormat = (result: ImmutableStyleMap): string => {
   return JSON.stringify({

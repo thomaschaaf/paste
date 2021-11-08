@@ -40,9 +40,10 @@ const getWildcardExternalPeers = (peerDeps = {}) => {
 
 function build(packageJson) {
   // Entry and Output file paths
-  const entryPoints = [packageJson['main:dev']];
-  const outFileCJS = packageJson['main'];
-  const outFileESM = packageJson['module'];
+  const {publishConfig} = packageJson;
+  const entryPoints = [packageJson['main']];
+  const outFileCJS = publishConfig['main'];
+  const outFileESM = publishConfig['module'];
   // Things we don't want to bundle
   const external = getWildcardExternalPeers(packageJson.peerDependencies);
 

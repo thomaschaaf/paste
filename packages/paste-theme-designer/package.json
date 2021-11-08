@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@datadog/browser-rum": "^2.8.1",
-    "@twilio-paste/core": "^10.0.0",
-    "@twilio-paste/icons": "^5.1.2",
+    "@twilio-paste/core": "workspace:*",
+    "@twilio-paste/icons": "workspace:*",
     "next": "10.0.4",
     "react-color": "^2.19.3"
   },
