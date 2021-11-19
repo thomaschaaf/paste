@@ -1,0 +1,446 @@
+{
+  "version": 2,
+  "projects": {
+    "@twilio-paste/codemods": {
+      "root": "packages/paste-codemods"
+    },
+    "@twilio-paste/color-contrast-utils": {
+      "root": "packages/paste-color-contrast-utils"
+    },
+    "@twilio-paste/alert": {
+      "root": "packages/paste-core/components/alert"
+    },
+    "@twilio-paste/alert-dialog": {
+      "root": "packages/paste-core/components/alert-dialog"
+    },
+    "@twilio-paste/anchor": {
+      "root": "packages/paste-core/components/anchor"
+    },
+    "@twilio-paste/avatar": {
+      "root": "packages/paste-core/components/avatar"
+    },
+    "@twilio-paste/badge": {
+      "root": "packages/paste-core/components/badge"
+    },
+    "@twilio-paste/base-radio-checkbox": {
+      "root": "packages/paste-core/components/base-radio-checkbox"
+    },
+    "@twilio-paste/breadcrumb": {
+      "root": "packages/paste-core/components/breadcrumb"
+    },
+    "@twilio-paste/button": {
+      "root": "packages/paste-core/components/button"
+    },
+    "@twilio-paste/card": {
+      "root": "packages/paste-core/components/card"
+    },
+    "@twilio-paste/checkbox": {
+      "root": "packages/paste-core/components/checkbox"
+    },
+    "@twilio-paste/combobox": {
+      "root": "packages/paste-core/components/combobox"
+    },
+    "@twilio-paste/data-grid": {
+      "root": "packages/paste-core/components/data-grid"
+    },
+    "@twilio-paste/date-picker": {
+      "root": "packages/paste-core/components/date-picker"
+    },
+    "@twilio-paste/disclosure": {
+      "root": "packages/paste-core/components/disclosure"
+    },
+    "@twilio-paste/display-pill-group": {
+      "root": "packages/paste-core/components/display-pill-group"
+    },
+    "@twilio-paste/form": {
+      "root": "packages/paste-core/components/form"
+    },
+    "@twilio-paste/form-pill-group": {
+      "root": "packages/paste-core/components/form-pill-group"
+    },
+    "@twilio-paste/heading": {
+      "root": "packages/paste-core/components/heading"
+    },
+    "@twilio-paste/help-text": {
+      "root": "packages/paste-core/components/help-text"
+    },
+    "@twilio-paste/inline-control-group": {
+      "root": "packages/paste-core/components/inline-control-group"
+    },
+    "@twilio-paste/input": {
+      "root": "packages/paste-core/components/input"
+    },
+    "@twilio-paste/input-box": {
+      "root": "packages/paste-core/components/input-box"
+    },
+    "@twilio-paste/label": {
+      "root": "packages/paste-core/components/label"
+    },
+    "@twilio-paste/list": {
+      "root": "packages/paste-core/components/list"
+    },
+    "@twilio-paste/menu": {
+      "root": "packages/paste-core/components/menu"
+    },
+    "@twilio-paste/modal": {
+      "root": "packages/paste-core/components/modal"
+    },
+    "@twilio-paste/pagination": {
+      "root": "packages/paste-core/components/pagination"
+    },
+    "@twilio-paste/paragraph": {
+      "root": "packages/paste-core/components/paragraph"
+    },
+    "@twilio-paste/popover": {
+      "root": "packages/paste-core/components/popover"
+    },
+    "@twilio-paste/radio-group": {
+      "root": "packages/paste-core/components/radio-group"
+    },
+    "@twilio-paste/screen-reader-only": {
+      "root": "packages/paste-core/components/screen-reader-only"
+    },
+    "@twilio-paste/select": {
+      "root": "packages/paste-core/components/select"
+    },
+    "@twilio-paste/separator": {
+      "root": "packages/paste-core/components/separator"
+    },
+    "@twilio-paste/skeleton-loader": {
+      "root": "packages/paste-core/components/skeleton-loader"
+    },
+    "@twilio-paste/spinner": {
+      "root": "packages/paste-core/components/spinner"
+    },
+    "@twilio-paste/table": {
+      "root": "packages/paste-core/components/table"
+    },
+    "@twilio-paste/tabs": {
+      "root": "packages/paste-core/components/tabs"
+    },
+    "@twilio-paste/textarea": {
+      "root": "packages/paste-core/components/textarea"
+    },
+    "@twilio-paste/time-picker": {
+      "root": "packages/paste-core/components/time-picker"
+    },
+    "@twilio-paste/toast": {
+      "root": "packages/paste-core/components/toast"
+    },
+    "@twilio-paste/tooltip": {
+      "root": "packages/paste-core/components/tooltip"
+    },
+    "@twilio-paste/truncate": {
+      "root": "packages/paste-core/components/truncate"
+    },
+    "@twilio-paste-core/alert": {
+      "root": "packages/paste-core/core-bundle/alert"
+    },
+    "@twilio-paste-core/alert-dialog": {
+      "root": "packages/paste-core/core-bundle/alert-dialog"
+    },
+    "@twilio-paste-core/anchor": {
+      "root": "packages/paste-core/core-bundle/anchor"
+    },
+    "@twilio-paste-core/animation-library": {
+      "root": "packages/paste-core/core-bundle/animation-library"
+    },
+    "@twilio-paste-core/aspect-ratio": {
+      "root": "packages/paste-core/core-bundle/aspect-ratio"
+    },
+    "@twilio-paste-core/avatar": {
+      "root": "packages/paste-core/core-bundle/avatar"
+    },
+    "@twilio-paste-core/badge": {
+      "root": "packages/paste-core/core-bundle/badge"
+    },
+    "@twilio-paste-core/base-radio-checkbox": {
+      "root": "packages/paste-core/core-bundle/base-radio-checkbox"
+    },
+    "@twilio-paste-core/box": {
+      "root": "packages/paste-core/core-bundle/box"
+    },
+    "@twilio-paste-core/breadcrumb": {
+      "root": "packages/paste-core/core-bundle/breadcrumb"
+    },
+    "@twilio-paste-core/button": {
+      "root": "packages/paste-core/core-bundle/button"
+    },
+    "@twilio-paste-core/card": {
+      "root": "packages/paste-core/core-bundle/card"
+    },
+    "@twilio-paste-core/checkbox": {
+      "root": "packages/paste-core/core-bundle/checkbox"
+    },
+    "@twilio-paste-core/clipboard-copy-library": {
+      "root": "packages/paste-core/core-bundle/clipboard-copy-library"
+    },
+    "@twilio-paste-core/color-contrast-utils": {
+      "root": "packages/paste-core/core-bundle/color-contrast-utils"
+    },
+    "@twilio-paste-core/combobox": {
+      "root": "packages/paste-core/core-bundle/combobox"
+    },
+    "@twilio-paste-core/combobox-primitive": {
+      "root": "packages/paste-core/core-bundle/combobox-primitive"
+    },
+    "@twilio-paste-core/customization": {
+      "root": "packages/paste-core/core-bundle/customization"
+    },
+    "@twilio-paste-core/data-grid": {
+      "root": "packages/paste-core/core-bundle/data-grid"
+    },
+    "@twilio-paste-core/date-picker": {
+      "root": "packages/paste-core/core-bundle/date-picker"
+    },
+    "@twilio-paste-core/design-tokens": {
+      "root": "packages/paste-core/core-bundle/design-tokens"
+    },
+    "@twilio-paste-core/disclosure": {
+      "root": "packages/paste-core/core-bundle/disclosure"
+    },
+    "@twilio-paste-core/disclosure-primitive": {
+      "root": "packages/paste-core/core-bundle/disclosure-primitive"
+    },
+    "@twilio-paste-core/display-pill-group": {
+      "root": "packages/paste-core/core-bundle/display-pill-group"
+    },
+    "@twilio-paste-core/dropdown-library": {
+      "root": "packages/paste-core/core-bundle/dropdown-library"
+    },
+    "@twilio-paste-core/flex": {
+      "root": "packages/paste-core/core-bundle/flex"
+    },
+    "@twilio-paste-core/form-pill-group": {
+      "root": "packages/paste-core/core-bundle/form-pill-group"
+    },
+    "@twilio-paste-core/grid": {
+      "root": "packages/paste-core/core-bundle/grid"
+    },
+    "@twilio-paste-core/heading": {
+      "root": "packages/paste-core/core-bundle/heading"
+    },
+    "@twilio-paste-core/help-text": {
+      "root": "packages/paste-core/core-bundle/help-text"
+    },
+    "@twilio-paste-core/inline-control-group": {
+      "root": "packages/paste-core/core-bundle/inline-control-group"
+    },
+    "@twilio-paste-core/input": {
+      "root": "packages/paste-core/core-bundle/input"
+    },
+    "@twilio-paste-core/input-box": {
+      "root": "packages/paste-core/core-bundle/input-box"
+    },
+    "@twilio-paste-core/label": {
+      "root": "packages/paste-core/core-bundle/label"
+    },
+    "@twilio-paste-core/list": {
+      "root": "packages/paste-core/core-bundle/list"
+    },
+    "@twilio-paste-core/media-object": {
+      "root": "packages/paste-core/core-bundle/media-object"
+    },
+    "@twilio-paste-core/menu": {
+      "root": "packages/paste-core/core-bundle/menu"
+    },
+    "@twilio-paste-core/menu-primitive": {
+      "root": "packages/paste-core/core-bundle/menu-primitive"
+    },
+    "@twilio-paste-core/modal": {
+      "root": "packages/paste-core/core-bundle/modal"
+    },
+    "@twilio-paste-core/modal-dialog-primitive": {
+      "root": "packages/paste-core/core-bundle/modal-dialog-primitive"
+    },
+    "@twilio-paste-core/non-modal-dialog-primitive": {
+      "root": "packages/paste-core/core-bundle/non-modal-dialog-primitive"
+    },
+    "@twilio-paste/core": {
+      "root": "packages/paste-core/core-bundle"
+    },
+    "@twilio-paste-core/pagination": {
+      "root": "packages/paste-core/core-bundle/pagination"
+    },
+    "@twilio-paste-core/paragraph": {
+      "root": "packages/paste-core/core-bundle/paragraph"
+    },
+    "@twilio-paste-core/popover": {
+      "root": "packages/paste-core/core-bundle/popover"
+    },
+    "@twilio-paste-core/radio-group": {
+      "root": "packages/paste-core/core-bundle/radio-group"
+    },
+    "@twilio-paste-core/reakit-library": {
+      "root": "packages/paste-core/core-bundle/reakit-library"
+    },
+    "@twilio-paste-core/screen-reader-only": {
+      "root": "packages/paste-core/core-bundle/screen-reader-only"
+    },
+    "@twilio-paste-core/select": {
+      "root": "packages/paste-core/core-bundle/select"
+    },
+    "@twilio-paste-core/separator": {
+      "root": "packages/paste-core/core-bundle/separator"
+    },
+    "@twilio-paste-core/sibling-box": {
+      "root": "packages/paste-core/core-bundle/sibling-box"
+    },
+    "@twilio-paste-core/skeleton-loader": {
+      "root": "packages/paste-core/core-bundle/skeleton-loader"
+    },
+    "@twilio-paste-core/spinner": {
+      "root": "packages/paste-core/core-bundle/spinner"
+    },
+    "@twilio-paste-core/stack": {
+      "root": "packages/paste-core/core-bundle/stack"
+    },
+    "@twilio-paste-core/style-props": {
+      "root": "packages/paste-core/core-bundle/style-props"
+    },
+    "@twilio-paste-core/styling-library": {
+      "root": "packages/paste-core/core-bundle/styling-library"
+    },
+    "@twilio-paste-core/table": {
+      "root": "packages/paste-core/core-bundle/table"
+    },
+    "@twilio-paste-core/tabs": {
+      "root": "packages/paste-core/core-bundle/tabs"
+    },
+    "@twilio-paste-core/tabs-primitive": {
+      "root": "packages/paste-core/core-bundle/tabs-primitive"
+    },
+    "@twilio-paste-core/text": {
+      "root": "packages/paste-core/core-bundle/text"
+    },
+    "@twilio-paste-core/textarea": {
+      "root": "packages/paste-core/core-bundle/textarea"
+    },
+    "@twilio-paste-core/theme": {
+      "root": "packages/paste-core/core-bundle/theme"
+    },
+    "@twilio-paste-core/time-picker": {
+      "root": "packages/paste-core/core-bundle/time-picker"
+    },
+    "@twilio-paste-core/toast": {
+      "root": "packages/paste-core/core-bundle/toast"
+    },
+    "@twilio-paste-core/tooltip": {
+      "root": "packages/paste-core/core-bundle/tooltip"
+    },
+    "@twilio-paste-core/tooltip-primitive": {
+      "root": "packages/paste-core/core-bundle/tooltip-primitive"
+    },
+    "@twilio-paste-core/truncate": {
+      "root": "packages/paste-core/core-bundle/truncate"
+    },
+    "@twilio-paste-core/types": {
+      "root": "packages/paste-core/core-bundle/types"
+    },
+    "@twilio-paste-core/uid-library": {
+      "root": "packages/paste-core/core-bundle/uid-library"
+    },
+    "@twilio-paste-core/utils": {
+      "root": "packages/paste-core/core-bundle/utils"
+    },
+    "@twilio-paste/aspect-ratio": {
+      "root": "packages/paste-core/layout/aspect-ratio"
+    },
+    "@twilio-paste/flex": {
+      "root": "packages/paste-core/layout/flex"
+    },
+    "@twilio-paste/grid": {
+      "root": "packages/paste-core/layout/grid"
+    },
+    "@twilio-paste/media-object": {
+      "root": "packages/paste-core/layout/media-object"
+    },
+    "@twilio-paste/stack": {
+      "root": "packages/paste-core/layout/stack"
+    },
+    "@twilio-paste/box": {
+      "root": "packages/paste-core/primitives/box"
+    },
+    "@twilio-paste/combobox-primitive": {
+      "root": "packages/paste-core/primitives/combobox"
+    },
+    "@twilio-paste/disclosure-primitive": {
+      "root": "packages/paste-core/primitives/disclosure"
+    },
+    "@twilio-paste/menu-primitive": {
+      "root": "packages/paste-core/primitives/menu"
+    },
+    "@twilio-paste/modal-dialog-primitive": {
+      "root": "packages/paste-core/primitives/modal-dialog"
+    },
+    "@twilio-paste/non-modal-dialog-primitive": {
+      "root": "packages/paste-core/primitives/non-modal-dialog"
+    },
+    "@twilio-paste/sibling-box": {
+      "root": "packages/paste-core/primitives/sibling-box"
+    },
+    "@twilio-paste/tabs-primitive": {
+      "root": "packages/paste-core/primitives/tabs"
+    },
+    "@twilio-paste/text": {
+      "root": "packages/paste-core/primitives/text"
+    },
+    "@twilio-paste/tooltip-primitive": {
+      "root": "packages/paste-core/primitives/tooltip"
+    },
+    "@twilio-paste/cra-template": {
+      "root": "packages/paste-cra-template"
+    },
+    "@twilio-paste/customization": {
+      "root": "packages/paste-customization"
+    },
+    "@twilio-paste/design-tokens": {
+      "root": "packages/paste-design-tokens"
+    },
+    "@twilio-paste/icons": {
+      "root": "packages/paste-icons"
+    },
+    "@twilio-paste/animation-library": {
+      "root": "packages/paste-libraries/animation"
+    },
+    "@twilio-paste/clipboard-copy-library": {
+      "root": "packages/paste-libraries/clipboard-copy"
+    },
+    "@twilio-paste/dropdown-library": {
+      "root": "packages/paste-libraries/dropdown"
+    },
+    "@twilio-paste/reakit-library": {
+      "root": "packages/paste-libraries/reakit"
+    },
+    "@twilio-paste/styling-library": {
+      "root": "packages/paste-libraries/styling"
+    },
+    "@twilio-paste/uid-library": {
+      "root": "packages/paste-libraries/uid"
+    },
+    "@twilio-paste/nextjs-template": {
+      "root": "packages/paste-nextjs-template"
+    },
+    "@twilio-paste/style-props": {
+      "root": "packages/paste-style-props"
+    },
+    "@twilio-paste/theme": {
+      "root": "packages/paste-theme"
+    },
+    "@twilio-paste/theme-designer": {
+      "root": "packages/paste-theme-designer"
+    },
+    "@twilio-paste/token-contrast-checker": {
+      "root": "packages/paste-token-contrast-checker"
+    },
+    "@twilio-paste/types": {
+      "root": "packages/paste-types"
+    },
+    "@twilio-paste/utils": {
+      "root": "packages/paste-utils"
+    },
+    "@twilio-paste/website": {
+      "root": "packages/paste-website"
+    }
+  }
+}
