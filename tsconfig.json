@@ -20,7 +20,7 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "target": "es6",
-    "typeRoots": ["./@types", "node_modules/@types"],
+    "typeRoots": ["./@types", "node_modules/@types", "node_modules/cypress/types"],
     "forceConsistentCasingInFileNames": true,
     "newLine": "lf",
     "noUnusedLocals": true,
@@ -28,6 +28,7 @@
     "strict": true,
     "resolveJsonModule": true
   },
+  "baseUrl": ".",
   "include": ["packages/**/*", "dangerfile.ts", ".danger/**/*"],
   "exclude": [
     "node_modules",

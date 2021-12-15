@@ -9,6 +9,7 @@
 // eslint-disable-next-line @typescript-eslint/no-namespace
 declare namespace Cypress {
   interface Chainable<Subject> {
+    each<Item>(fn: (item: Item, index: number, $list: Item[]) => void): Chainable<Item>; // Can't properly infer type without breaking down Chainable
     /**
      * Gets the docs side `main` tag and returns it's chainer.
      * @example <caption>Find div with ID "my-selector" from the main element.</caption>
