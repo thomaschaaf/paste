@@ -1,0 +1,98 @@
+[
+  {
+    "text": "Introduction",
+    "buttonAttr": "sidebar-disclosure-button-introduction",
+    "contentAttr": "sidebar-disclosure-content-introduction",
+    "level": 0,
+    "children": [
+      {
+        "text": "For designers",
+        "buttonAttr": "sidebar-disclosure-button-for-designers",
+        "contentAttr": "sidebar-disclosure-content-for-designers",
+        "level": 1
+      },
+      {
+        "text": "For engineers",
+        "buttonAttr": "sidebar-disclosure-button-for-engineers",
+        "contentAttr": "sidebar-disclosure-content-for-engineers",
+        "level": 1
+      },
+      {
+        "text": "Contributing",
+        "buttonAttr": "sidebar-disclosure-button-contributing",
+        "contentAttr": "sidebar-disclosure-content-contributing",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "text": "Foundations",
+    "buttonAttr": "sidebar-disclosure-button-foundations",
+    "contentAttr": "sidebar-disclosure-content-foundations",
+    "level": 0,
+    "children": [
+      {
+        "text": "Content",
+        "buttonAttr": "sidebar-disclosure-button-content",
+        "contentAttr": "sidebar-disclosure-content-content",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "text": "Patterns",
+    "buttonAttr": "sidebar-disclosure-button-patterns",
+    "contentAttr": "sidebar-disclosure-content-patterns",
+    "level": 0,
+    "children": []
+  },
+  {
+    "text": "Components",
+    "buttonAttr": "sidebar-disclosure-button-components",
+    "contentAttr": "sidebar-disclosure-content-components",
+    "level": 0,
+    "children": [
+      {
+        "text": "Icon",
+        "buttonAttr": "sidebar-disclosure-button-icon",
+        "contentAttr": "sidebar-disclosure-content-icon",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "text": "Primitives",
+    "buttonAttr": "sidebar-disclosure-button-primitives",
+    "contentAttr": "sidebar-disclosure-content-primitives",
+    "level": 0,
+    "children": []
+  },
+  {
+    "text": "Tokens",
+    "buttonAttr": "sidebar-disclosure-button-tokens",
+    "contentAttr": "sidebar-disclosure-content-tokens",
+    "level": 0,
+    "children": []
+  },
+  {
+    "text": "Core",
+    "buttonAttr": "sidebar-disclosure-button-core",
+    "contentAttr": "sidebar-disclosure-content-core",
+    "level": 0,
+    "children": [
+      {
+        "text": "Libraries",
+        "buttonAttr": "sidebar-disclosure-button-libraries",
+        "contentAttr": "sidebar-disclosure-content-libraries",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "text": "Customization",
+    "buttonAttr": "sidebar-disclosure-button-customization",
+    "contentAttr": "sidebar-disclosure-content-customization",
+    "level": 0,
+    "children": []
+  }
+]

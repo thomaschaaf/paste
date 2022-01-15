@@ -3,6 +3,7 @@ import {Box} from '@twilio-paste/box';
 import type {BoxProps, BoxStyleProps} from '@twilio-paste/box';
 import {DisclosurePrimitive} from '@twilio-paste/disclosure-primitive';
 import {ChevronDisclosureExpandedIcon} from '@twilio-paste/icons/esm/ChevronDisclosureExpandedIcon';
+import {kebabCase} from 'lodash';
 
 import {SidebarDisclosureContext} from './SidebarDisclosureContext';
 
@@ -81,11 +82,15 @@ const StyledButton = React.forwardRef<HTMLButtonElement, SidebarDisclosureButton
   );
 });
 
+const BUTTON_DATA_ATTR = 'sidebar-disclosure-button';
+
 export const SidebarDisclosureButton: React.FC<SidebarDisclosureButtonProps> = ({children, ...props}) => {
   const {disclosure} = React.useContext(SidebarDisclosureContext);
 
+  const dataAttribute = `${BUTTON_DATA_ATTR}-${kebabCase(children as string)}`;
+
   return (
-    <DisclosurePrimitive as={StyledButton} {...disclosure} {...props}>
+    <DisclosurePrimitive as={StyledButton} {...disclosure} {...props} data-cy={dataAttribute} data-level={props.level}>
       {children}
     </DisclosurePrimitive>
   );
