@@ -62,11 +62,25 @@ interface SiteWrapperProps {
 }
 
 const SiteWrapper: React.FC<SiteWrapperProps> = ({pathname, children}) => {
+  const [isHydrated, setIsHydrated] = React.useState(false);
   const navigationQueryData: NavigationQuery = useStaticQuery(pageQuery);
   const [theme, toggleMode, componentMounted] = useDarkMode();
 
+  React.useEffect(() => {
+    console.log(process.env.GATSBY_NODE_ENV);
+    if (process.env.GATSBY_NODE_ENV === 'development' || process.env.GATSBY_NODE_ENV === 'test') {
+      console.info('Hydration has finished.');
+      setIsHydrated(true);
+    }
+  }, []);
+
   return (
-    <Theme.Provider theme={theme} customBreakpoints={SITE_BREAKPOINTS}>
+    <Theme.Provider
+      theme={theme}
+      customBreakpoints={SITE_BREAKPOINTS}
+      data-cy="site-wrapper"
+      data-hydration-finished={isHydrated}
+    >
       <NavigationContext.Provider value={{...navigationQueryData, pathname}}>
         <DarkModeContext.Provider value={{theme, toggleMode, componentMounted}}>
           <SkipLinkContainer>

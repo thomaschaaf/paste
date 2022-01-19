@@ -1,7 +1,10 @@
 describe('Sidebar navigation', () => {
   beforeEach(() => {
     cy.visit('/');
-    cy.wait(500);
+  });
+
+  beforeEach(() => {
+    cy.get('[data-cy="site-wrapper"]').should('have.attr', 'data-hydration-finished', 'true');
   });
 
   it('opens the sidebar disclosures', () => {
