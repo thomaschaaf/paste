@@ -17,6 +17,7 @@
     "paths": {
       "*": ["./@types/*"]
     },
+    "baseUrl": ".",
     "skipLibCheck": true,
     "sourceMap": true,
     "target": "es6",
@@ -29,7 +30,8 @@
     "resolveJsonModule": true,
     "esModuleInterop": true
   },
-  "include": ["packages/**/*", "dangerfile.ts", ".danger/**/*", "./.jest/@types/index.d.ts"],
+  "files": ["./.jest/@types/index.d.ts"],
+  "include": ["packages/**/*", "dangerfile.ts", ".danger/**/*"],
   "exclude": [
     "node_modules",
     "docs",
