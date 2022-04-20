@@ -40854,6 +40854,7 @@ is-whitespace@latest:
     theo: ^8.1.5
     ts-node: ^10.0.0
     tslib: ^2.0.3
+    turbo: ^1.2.4
     typedoc: ^0.20.12
     typescript: ^4.1.3
     weak-napi: ^2.0.2
@@ -49798,6 +49799,137 @@ resolve@^1.17.0:
   version: 0.0.6
   resolution: "tunnel@npm:0.0.6"
   checksum: c362948df9ad34b649b5585e54ce2838fa583aa3037091aaed66793c65b423a264e5229f0d7e9a95513a795ac2bd4cb72cda7e89a74313f182c1e9ae0b0994fa
+  languageName: node
+  linkType: hard
+
+"turbo-darwin-64@npm:1.2.4":
+  version: 1.2.4
+  resolution: "turbo-darwin-64@npm:1.2.4"
+  checksum: c9e454f88cba603c68a82e7bde8e6b01ef1a10f4e38638b138db78a95da4a8a510d3c318992afdddc017989c54be5fd84de9378b511efeea103638c5f256bb78
+  languageName: node
+  linkType: hard
+
+"turbo-darwin-arm64@npm:1.2.4":
+  version: 1.2.4
+  resolution: "turbo-darwin-arm64@npm:1.2.4"
+  checksum: 913b7a69f0ac054dbfc56690e528884ccc50eb1cdf4888270225d8806ad6a7471539c7c3e3bc33b046f92de979be71ecbb00c7f97e22ccfca0d9e53f01abb452
+  languageName: node
+  linkType: hard
+
+"turbo-freebsd-64@npm:1.2.4":
+  version: 1.2.4
+  resolution: "turbo-freebsd-64@npm:1.2.4"
+  checksum: f9d74b0a6c8c0c3b6d8a773293d73abd390a8f04225b07b75859978134349314daa74825eb7cc65ea49c4fddd566de76d7702e8c887d1715bf06ad586099476c
+  languageName: node
+  linkType: hard
+
+"turbo-freebsd-arm64@npm:1.2.4":
+  version: 1.2.4
+  resolution: "turbo-freebsd-arm64@npm:1.2.4"
+  checksum: 6926151333067720a16c6c147288540b17c164968fa5e22cf3aa2d30baa68b895340cac980b7a2fa600d8e935a1df393ade1b3a80379d4a9eff3a7cc65c99cb5
+  languageName: node
+  linkType: hard
+
+"turbo-linux-32@npm:1.2.4":
+  version: 1.2.4
+  resolution: "turbo-linux-32@npm:1.2.4"
+  checksum: 1febb0d4ce32e7a844aafec332f9adb87c59a78671d4c7e18df4618487d71b53cd97466a8a6c4aa70f81a4dbcaeaae76a9945ff208bd875647a477e6a34533ae
+  languageName: node
+  linkType: hard
+
+"turbo-linux-64@npm:1.2.4":
+  version: 1.2.4
+  resolution: "turbo-linux-64@npm:1.2.4"
+  checksum: 487df8f810bfe258b0c1e15d1f32ce84b01ee94aa176ff3b9e09998fe0a3affe6cd85f16317063fbdffdb248803d73ec1e49baced4a7726291927eb88bab3501
+  languageName: node
+  linkType: hard
+
+"turbo-linux-arm64@npm:1.2.4":
+  version: 1.2.4
+  resolution: "turbo-linux-arm64@npm:1.2.4"
+  checksum: b31e8ee7254efba7d83db8780d20320b45946075cabf5c4ce1c3d53381ba77eb33967ba8f874ead6fd10372e41e9d81a5e8a08e581b2d6092a559ff87a386356
+  languageName: node
+  linkType: hard
+
+"turbo-linux-arm@npm:1.2.4":
+  version: 1.2.4
+  resolution: "turbo-linux-arm@npm:1.2.4"
+  checksum: c11732d524bee349424c5f3384a0fbb74e1e7aa4f18c21e58be372b3b2629abda18aef4d93064fbed3fb0262528afa4652fcd70cb4a3745819ee4c0656d233bf
+  languageName: node
+  linkType: hard
+
+"turbo-linux-mips64le@npm:1.2.4":
+  version: 1.2.4
+  resolution: "turbo-linux-mips64le@npm:1.2.4"
+  checksum: e0a5b2297085e9d8d0a812b4c763c398b8088af74cdfd33885ff0690e3d92585665aae8d577237020530699ff7377f00f483a946faae8c5296c1af79711992fc
+  languageName: node
+  linkType: hard
+
+"turbo-linux-ppc64le@npm:1.2.4":
+  version: 1.2.4
+  resolution: "turbo-linux-ppc64le@npm:1.2.4"
+  checksum: baae70d93055938ba351e872c63498b18e36541a0c190e38d3f7d2644185b2f3d2a284840dca29207c4083b0e254d41f22b6438e01e076d542aa5654cd63314a
+  languageName: node
+  linkType: hard
+
+"turbo-windows-32@npm:1.2.4":
+  version: 1.2.4
+  resolution: "turbo-windows-32@npm:1.2.4"
+  checksum: 7f91f909ddbdb98fccc44b55866cffb7b6241d6b426ffdf6bf8e2d07af449dd1d94d48a994d13d0a99aad05842157661fea22fe5d7e75e053b05fc12e0554184
+  languageName: node
+  linkType: hard
+
+"turbo-windows-64@npm:1.2.4":
+  version: 1.2.4
+  resolution: "turbo-windows-64@npm:1.2.4"
+  checksum: a503f514e2ad9b61ebccf69336cfdc0cdc1c3fcb143114239bf358013e5ff508daad78247dc66f6bd81a8036b17374c92999a7f06c678a7710a0f8d9d3761a35
+  languageName: node
+  linkType: hard
+
+"turbo@npm:^1.2.4":
+  version: 1.2.4
+  resolution: "turbo@npm:1.2.4"
+  dependencies:
+    turbo-darwin-64: 1.2.4
+    turbo-darwin-arm64: 1.2.4
+    turbo-freebsd-64: 1.2.4
+    turbo-freebsd-arm64: 1.2.4
+    turbo-linux-32: 1.2.4
+    turbo-linux-64: 1.2.4
+    turbo-linux-arm: 1.2.4
+    turbo-linux-arm64: 1.2.4
+    turbo-linux-mips64le: 1.2.4
+    turbo-linux-ppc64le: 1.2.4
+    turbo-windows-32: 1.2.4
+    turbo-windows-64: 1.2.4
+  dependenciesMeta:
+    turbo-darwin-64:
+      optional: true
+    turbo-darwin-arm64:
+      optional: true
+    turbo-freebsd-64:
+      optional: true
+    turbo-freebsd-arm64:
+      optional: true
+    turbo-linux-32:
+      optional: true
+    turbo-linux-64:
+      optional: true
+    turbo-linux-arm:
+      optional: true
+    turbo-linux-arm64:
+      optional: true
+    turbo-linux-mips64le:
+      optional: true
+    turbo-linux-ppc64le:
+      optional: true
+    turbo-windows-32:
+      optional: true
+    turbo-windows-64:
+      optional: true
+  bin:
+    turbo: bin/turbo
+  checksum: a68362a1722136b4d26c9217b7da5272ea6d82b70a7855f4c2260d02aac402bbf0c866dcbd7e55a040b4327107e70dbfd357550042c02b601669477788385711
   languageName: node
   linkType: hard
 
