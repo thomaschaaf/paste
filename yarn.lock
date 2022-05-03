@@ -9952,6 +9952,12 @@ __metadata:
 "@twilio-paste/design-tokens@^7.1.1, @twilio-paste/design-tokens@^7.2.0, @twilio-paste/design-tokens@^7.2.1, @twilio-paste/design-tokens@workspace:packages/paste-design-tokens":
   version: 0.0.0-use.local
   resolution: "@twilio-paste/design-tokens@workspace:packages/paste-design-tokens"
+  dependencies:
+    gulp: ^4.0.2
+    gulp-cli: ^2.2.0
+    gulp-if: ^3.0.0
+    gulp-terser: ^2.0.1
+    gulp-theo: 2.0.1
   languageName: unknown
   linkType: soft
 
