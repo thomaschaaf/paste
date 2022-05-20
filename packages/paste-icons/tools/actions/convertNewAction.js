@@ -1,6 +1,6 @@
 const fs = require('fs');
 const {convertSvgToReact} = require('@twilio-labs/svg-to-react');
-const difference = require('lodash.difference');
+const difference = require('lodash/difference');
 const {
   getInputPath,
   getReactOutputPath,

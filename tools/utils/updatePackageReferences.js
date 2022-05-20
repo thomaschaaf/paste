@@ -3,7 +3,7 @@
  * Updates devDependencies with paste peerDependencies
  */
 const chalk = require('chalk');
-const lodash = require('lodash');
+const difference = require('lodash/difference');
 const {existsSync} = require('fs');
 const {resolve, relative} = require('path');
 const {getRepoPackages} = require('./getRepoPackages');
@@ -43,7 +43,7 @@ async function updatePackageDevDependencies(packageJsonPath, pastePeerDeps = [],
   if (packageJson.devDependencies != null) {
     const pasteDevDependencies = getPasteDependencyList(packageJson.devDependencies);
 
-    missingDevDeps = lodash.difference(pastePeerDeps, pasteDevDependencies);
+    missingDevDeps = difference(pastePeerDeps, pasteDevDependencies);
 
     if (missingDevDeps.length === 0) {
       // Do nothing, all pastePeerDeps are in devDeps

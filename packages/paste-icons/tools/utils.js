@@ -1,10 +1,13 @@
 const {join} = require('path');
 const fs = require('fs');
-const startcase = require('lodash.startcase');
+const startcase = require('lodash/startcase');
 const {SVG_PATH, REACT_PATH} = require('./constants');
 
 // Ramda-like general purpose functional pipe method
-const pipe = (...fns) => (x) => fns.reduce((y, f) => f(y), x);
+const pipe =
+  (...fns) =>
+  (x) =>
+    fns.reduce((y, f) => f(y), x);
 
 // Split ComponentName (PascalCase) to multi word regex
 // Used for icon title text for a11y
