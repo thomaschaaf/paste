@@ -1,5 +1,11 @@
 # Change Log
 
+## 4.0.1
+
+### Patch Changes
+
+- [`81fb59441`](https://github.com/twilio-labs/paste/commit/81fb5944168dbbb5579a6d0ebf2cff37d2455cd8) [#2410](https://github.com/twilio-labs/paste/pull/2410) Thanks [@nkrantz](https://github.com/nkrantz)! - [Tabs] Enable left/right arrow key tab switching on vertical tabs in addition to up/down
+
 ## 4.0.0
 
 ### Patch Changes

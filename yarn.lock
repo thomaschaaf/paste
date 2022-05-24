@@ -9891,7 +9891,7 @@ __metadata:
     "@twilio-paste/style-props": ^5.0.0
     "@twilio-paste/styling-library": ^1.0.0
     "@twilio-paste/table": ^4.0.0
-    "@twilio-paste/tabs": ^4.0.0
+    "@twilio-paste/tabs": ^4.0.1
     "@twilio-paste/tabs-primitive": ^0.2.6
     "@twilio-paste/text": ^6.0.0
     "@twilio-paste/textarea": ^5.0.0
@@ -11111,7 +11111,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@twilio-paste/tabs@^4.0.0, @twilio-paste/tabs@workspace:packages/paste-core/components/tabs":
+"@twilio-paste/tabs@^4.0.0, @twilio-paste/tabs@^4.0.1, @twilio-paste/tabs@workspace:packages/paste-core/components/tabs":
   version: 0.0.0-use.local
   resolution: "@twilio-paste/tabs@workspace:packages/paste-core/components/tabs"
   dependencies:

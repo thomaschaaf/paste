@@ -1,6 +1,6 @@
 {
   "name": "@twilio-paste/core",
-  "version": "13.0.0",
+  "version": "13.0.1",
   "status": "production",
   "description": "Core contains all the packages from the Paste design system.",
   "author": "Twilio Inc.",
@@ -82,7 +82,7 @@
     "@twilio-paste/style-props": "^5.0.0",
     "@twilio-paste/styling-library": "^1.0.0",
     "@twilio-paste/table": "^4.0.0",
-    "@twilio-paste/tabs": "^4.0.0",
+    "@twilio-paste/tabs": "^4.0.1",
     "@twilio-paste/tabs-primitive": "^0.2.6",
     "@twilio-paste/text": "^6.0.0",
     "@twilio-paste/textarea": "^5.0.0",
