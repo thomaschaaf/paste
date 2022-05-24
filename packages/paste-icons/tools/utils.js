@@ -1,6 +1,6 @@
 const {join} = require('path');
 const fs = require('fs');
-const startcase = require('lodash/startcase');
+const startcase = require('lodash/startCase');
 const {SVG_PATH, REACT_PATH} = require('./constants');
 
 // Ramda-like general purpose functional pipe method

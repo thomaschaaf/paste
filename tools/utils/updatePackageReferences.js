@@ -3,7 +3,7 @@
  * Updates devDependencies with paste peerDependencies
  */
 const chalk = require('chalk');
-const difference = require('lodash/difference');
+import difference from 'lodash/difference';
 const {existsSync} = require('fs');
 const {resolve, relative} = require('path');
 const {getRepoPackages} = require('./getRepoPackages');
